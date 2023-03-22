@@ -277,7 +277,7 @@ body{
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background: url('scroll-to-top1.svg');
+    background: url('imgs/scroll-to-top1.svg');
     background-size:cover;
     
     color: white; /* Text color */
