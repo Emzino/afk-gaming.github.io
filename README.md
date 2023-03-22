@@ -1,1 +1,0 @@
-# afk-gaming.github.io
