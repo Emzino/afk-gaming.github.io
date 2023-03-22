@@ -1,0 +1,559 @@
+.division-container {
+    max-width: calc(100% - 325px);
+    margin: 0 0 0px 325px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+
+  .responsive-image {
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  .division-container .title{
+    max-width: calc(100% );
+    padding-bottom: 40px;
+    width: 1000px;
+}
+
+.title h2{
+    padding-top: 20px;
+    font-size: 48px;
+    color: var(--logo-colour);
+    font-weight: 900;
+}
+
+.title h1{
+    padding-top: 20px;
+    font-size: 25px;
+    color: var(--logo-colour);
+    font-weight: 300;
+}
+
+.title p{
+
+    color: rgb(218, 84, 84);
+    font-size: 14px;
+    font-weight: 500;
+    font-variant-caps:all-small-caps;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.title p:hover{
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+.credit{
+   display: flex;
+   margin-top: 20px;
+   max-width: calc(100% );
+   
+   width: 1000px;
+   
+}
+.credit h1{
+    color: var(--logo-colour);
+    font-weight: normal;
+    font-size: 13px;
+    height: 100%;
+    text-underline-offset: 4px;
+    width: 1000px;
+    cursor: pointer;
+
+}
+
+.credit h2{
+    color: var(--logo-colour);
+    font-weight: normal;
+    font-size: 13px;
+    height: 100%;
+    text-align: right;
+    width: 1000px;
+
+}
+a.underline-text {
+    text-decoration: underline;
+  }
+
+.credit img{
+    width: 25px;
+    height: 100%;
+    border-radius: 50%;
+    margin-right: 10px;
+    transform: translateY(-4.5px);
+    box-shadow: 1px black solid;
+}
+
+.divid3r {
+    display: block;
+    border-top: 1px solid var(--logo-colour);
+    max-width: calc(100% );
+   width: 1000px;
+   margin-top: 30px;
+   border-radius: 500px;
+
+  }
+  
+.division-container .content{
+    padding-bottom: 40px;
+    max-width: calc(100% );
+    width: 1000px;
+    color: var(--logo-colour);
+    margin-top: 20px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.75;
+    padding-right: 100px;
+}
+
+.char-cards{
+    padding-bottom: 40px;
+    max-width: calc( 120%);
+    width: 100%;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.75;
+    justify-content: center;
+    align-items: center;
+}
+.card { 
+    display: inline-block;
+    size: 2% !important;
+    margin: 0px;
+    margin-left: 5px;
+    box-shadow: none;
+}
+
+.advertisement{
+    height: 200px;
+    width: 100%;
+    background:url(imgs/Six\ feet\ under\ poster-ai.png);
+    background-position-x: 50%;
+    background-position-y: 50% ;
+    background-repeat: no-repeat;
+    background-color: #f39200;
+    background-size:contain;
+    margin-top: 20px;
+    border-radius: 0px;
+    transition: all 0.15s ease;
+    box-shadow: 0 0 3px var(--hover-colour);
+    
+}
+
+.advertisement:hover{
+    /* border-radius: 20px; */
+    /* transform: translatey(2120px); */
+}
+
+.advertisement button{
+    text-decoration: none; padding-bottom:0; border: none; background: none; margin: 0 auto; margin-left: 97%; justify-content: right; scale: 1;
+        width: 20px;
+        height: 20px;
+    color: white;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.advertisement button:hover{
+    background-color: rgba(0,0,0,0.35);
+
+}
+
+@media (max-width: 1250px) {
+    .sidebar {
+        width: 1px;
+        opacity: 0;
+        visibility: hidden;
+        }
+    .division-container{
+        margin: 0 0 0 20px;
+        justify-content: center;
+        width: 100%;
+        max-width: calc(100%);
+
+    }
+    .video-file{
+        transform: translateX(0%); 
+
+    }
+
+    .containers {
+        width: 65%;
+
+        padding-left: 0px;
+      }
+
+      .homepage-container {
+        float:middle;
+        width: 100% !important;
+        margin: 0 auto;
+        justify-content: center;
+          
+      }
+      .stories{
+        transform: translateX(-150px);
+      }
+
+  }
+
+
+.video-file{
+    width: 65%; 
+    min-width: 200px;
+    margin: 0 auto;
+    margin-top:25px;
+    z-index: 200; 
+    border-radius: 8px; 
+    box-shadow: 0 0 5px var(--hover-colour);  
+    transform: translateX(25%);
+
+}
+
+
+#parent {
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    overflow: auto;
+    cursor:grab;
+  }
+  
+
+  
+  #parent::-webkit-scrollbar {
+      width: 15px;
+      height: 5px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  }
+  
+  #parent::-webkit-scrollbar-thumb {
+      background-color: #86acf3;
+      border-radius: 5px;
+  }
+
+
+  .prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+
+
+  .rating{
+    position: relative !important;
+    margin-right:calc(400px);
+    margin-top: 20px;
+    width: 1000px;
+    max-width: 1000px;
+    min-width: 1000px;
+    left: 0 !important;
+    top: 0px !important;
+    /* height: 200px;
+    width: 600px;
+    background-color: rgba(0,0,0,0.23);
+    outline: solid rgba(255,255,255,0.75) 2px;
+    border-radius: 10px;
+    backdrop-filter: blur(1px); */
+    z-index: 200;
+
+
+}
+
+.rating .rating-image img{
+    position: absolute;
+    width: 200px !important;
+    left: 0 !important;
+    top: 0px !important;
+    
+    animation:rotate-animation 5s ease,hue-shift 6s;
+    animation-iteration-count: infinite,1;
+    
+
+}
+
+
+.rating .rating-text{
+    position: absolute;
+    text-anchor:middle;
+    font-size: 50px;
+    color: rgb(237, 225, 253);
+    font-weight:500 !important;
+    width: 100px;
+    left: 50px;
+    text-align: center;
+    /* transform: translateY(110%); */
+    /* transform: translateY(66px); */
+    
+    top:25% !important;
+    animation-fill-mode: both;
+    
+
+
+
+    
+}
+
+.rating .rating-title{
+    position: absolute;
+
+    font-size: 50px;
+    font-weight: 0;
+    font-variant: small-caps;
+    
+    color: rgb(240, 143, 143);
+    left: 200px;
+    top: 7.5%;
+    
+    animation-fill-mode: both;
+
+
+}
+
+.rating .rating-description{
+    position: absolute;
+
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--logo-colour);
+    left: 200px;
+
+    top: 42%;
+    animation-fill-mode: both;
+
+    
+    
+
+}
+
+.rating .rating-subtext{
+    position: absolute;
+    /* font-size: 10px; */
+    font-size: 10px;
+
+    font-weight: 300;
+
+    color: rgb(255, 255, 255);
+    bottom: 1%;
+    transition: 2s all ease;
+    opacity: 1;
+    transform: translateX(200px);
+    animation-duration: 2s;
+    animation-iteration-count: 1,infinite;
+    animation-fill-mode: both;
+
+}
+
+.imgscroll{
+}
+
+.items.grabbing{
+    cursor: grabbing !important;
+}
+
+
+.stories{
+    position: relative;
+    /* background-color: #CAC39F; */
+    width: 282px;
+    min-width: 0px !important;
+    height: 158.625px;
+    margin: 12px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 3px var(--hover-colour);
+    margin-bottom: 100px;
+    line-height: 1.5;
+    
+}
+
+.stories:hover{
+    scale: 1.03;
+    text-underline-offset: 2.5px;
+    text-decoration: underline;
+    color:var(--logo-colour);
+    cursor: pointer;
+}
+
+.story-1{
+    border-radius: 8px;
+    height: 100%;
+    background-size: 100%;
+    background-color: rgba(203, 203, 203, 0.838);
+    background-repeat: no-repeat;
+    filter: brightness(0.9);
+    /* background-image: url(Sekiro-Shadows-Die-Twice-wallpaper-2.jpg); */
+    background-size: cover;
+
+}
+.story-2{
+    border-radius: 8px;
+    height: 100%;
+    background-size: 100%;
+    background-color: rgba(203, 203, 203, 0.838);
+
+    background-repeat: no-repeat;
+    filter: brightness(0.9);
+    background-image: url(imgs/Q4K237E1EGPI1467079634956.jpg);
+    background-size: cover;
+    background-position: 52%;
+    
+}
+.story-3{
+    border-radius: 8px;
+    height: 100%;
+    background-size: 100%;
+    background-color: rgba(203, 203, 203, 0.838);
+    background-image: url(imgs/maxresdefault.jpg);
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    filter: brightness(0.9);
+
+}
+.story-4{
+    border-radius: 8px;
+    height: 100%;
+    background-size: 100%;
+    background-color: rgba(203, 203, 203, 0.838);
+    background-image: url(imgs/call-of-duty-modern-warfare-2-2022-games-call-of-duty-3840x2160-8565.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(0.9);
+
+}
+
+.story-text h2{
+    margin: 15px 0 0 0;
+    color: var(--logo-colour);
+    font-size: 15px;
+    width: 90%;
+
+}
+
+
+#warning {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+    color: rgb(218, 84, 84);
+    user-select: none; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.693);
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    z-index: 9999;
+    backdrop-filter: blur(4px) grayscale(50%);
+
+}
+
+#warning button {
+    padding: 5px 20px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+
+
+#warning button:hover{
+    background-color: rgba(255,255,255,0.8);
+
+}
+
+
+
+.share-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 20px;
+    transform: all 2s ease;
+
+  }
+  
+  .share-buttons a, 
+  .share-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #7d8185;
+    border: none;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+    transform: all 2s ease;
+  }
+  
+  .share-buttons a:hover, 
+  .share-buttons button:hover {
+    filter: brightness(1.2);
+  }
+  
+  #copy-url-button {
+  }
+  
+  #copy-url-button:hover {
+  }
+  
+  .fa-facebook-f {
+  }
+  
+  .fa-twitter {
+  }
+  
+  .fa-linkedin {
+  }
+  
+  .fa-copy {
+    font-size: 0.8rem;
+    height: 16px;
+    width: 18px;
+  }
+  
+
+  .share{
+    margin: 0 auto;
+    margin-top: 20px;
+
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+  }
+
+

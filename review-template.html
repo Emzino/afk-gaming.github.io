@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="homepage-style.css">
+    <link rel="stylesheet" href="review-stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    <title>AFK - Homepage</title>
+    <link rel="shortcut icon" type="image/x-icon" href="pause-circle-regular-24.png" />
+
+	<script>
+		function checkResolution() {
+			var width = window.screen.width;
+			var height = window.screen.height;
+			var ratio = width / height;
+			if (ratio < 16/9) {
+				document.getElementById("warning").style.display = "flex";
+                
+			}
+		}
+
+		function dismissWarning() {
+            const warning = document.getElementById("warning");
+            warning.style.transition = "opacity 0.5s ease"; // Add transition effect
+            warning.style.opacity = 0; // Fade out element
+            setTimeout(function() {
+                warning.style.display = "none"; // Hide element after animation is complete
+            }, 500); // Set timeout to match transition duration
+        }
+	</script>
+</head>
+<body onload="checkResolution()">
+	<div id="warning">
+		<p >Warning: View in 1920x1080 or higher for the best experience.<br>  <button onclick="dismissWarning()">Dismiss</button>  </p>
+	
+    </div>
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <a href="homepage.html">
+                    <!-- <i class='bx bx-game bx-tada' ></i> -->
+                    <i class='bx bx-pause-circle '  ></i>
+                    
+                    <div class="logo_name">AFK</div>
+                </a>
+            </div>
+            <i class='bx bx-menu' id="button"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="homepage.html" id="home">
+                    <i class='bx bx-home-alt' id="home_icon"></i>
+                    <span class="links_name" id="home_label">Home</span>
+                    
+                </a>
+                
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <span class="divider"></span>
+            
+            
+
+            
+            <li>
+                <a href="index.html">
+                    <i class='bx bx-edit' ></i>
+                    <span class="links_name">Reviews</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-news ' ></i>
+                    <span class="links_name">News</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-wifi bx-rotate' ></i>
+
+                    <span class="links_name">Socials</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+
+                    <i class='bx bx-play-circle' ></i>
+                    <span class="links_name">Videos</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-bulb' ></i>
+                    <span class="links_name">FAQ</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-happy-beaming' ></i>
+                    <span class="links_name">About Us</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <span class="divider2"></span>
+            <li>
+                <span class="sociallabel">SOCIALS</span>
+            </li>
+            <li>
+                
+                <a href="#">
+                    
+                    <i class='bx bxl-youtube'></i>
+                    <span class="links_name">YouTube</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxl-tiktok'></i>
+                    <span class="links_name">TikTok</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxl-instagram'></i>
+                    <span class="links_name">Instagram</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxl-twitter'></i>
+                    <span class="links_name">Twitter</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <span class="divider3"></span>
+            <li>
+                <a href="#">
+                    <i class='bx bx-copyright'></i>
+                    <span class="links_name">Copyright 2022</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="imgs/profile.jpg" alt="">
+                    <div class="name_title">
+                        <div contenteditable="true" class="profile_name" >Shazmul</div>
+                        <div contenteditable="true" class="profile_title">Blog Writer</div>
+                        
+                       
+                    </div>
+                </div>
+                <i class='bx bx-moon' id="darkmode_toggle"></i>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </div>
+        </div>
+    </div>
+    
+   <section>
+    <div class="division-container">
+        <div class="title">
+            <p>GENSHIN IMPACT</p>
+
+            <h2>Genshin Impact: Review</h2>
+            <h1 style="font-size: 20px ;">A well-crafted, free-to-play action RPG with stunning graphics and innovative gameplay mechanics.</h1>
+
+
+        </div>
+        <img src="imgs/genshin-impact-4k-5c.jpg" alt="Image" class="responsive-image">
+
+
+        <div class="credit">
+            <img class="pfp" src="imgs/profile.jpg" alt="">
+            <h1>Author:  <a class="underline-text"> Shazmul</a></h1>
+            <h2>POSTED: MAR 1, 2023</h2>
+    
+        </div>    
+        <span class="divid3r"></span>
+        <div class="content"><h1>Introduction:</h1>
+            Genshin Impact is a game that needs no introduction. Since its release in September 2020, it has taken the gaming world by storm, garnering critical acclaim and amassing a huge fan base with its stunning visuals, immersive storyline, and engaging gameplay. But what makes Genshin Impact a masterpiece of gaming?
+
+            <img src="imgs/maxresdefault1.jpg" style="top:25px; margin-bottom: 20px;" alt="Image" class="responsive-image">
+            <span class="divid3r" style="margin-bottom: 25px;"></span>
+
+            <h1>Open-World Design:</h1>
+            First and foremost, the game's open-world design is a work of art. The world of Teyvat is vast and diverse, filled with hidden treasures, challenging enemies, and breathtaking vistas. The level of detail and care that has gone into crafting this world is evident in every corner of the game. Whether you're exploring the bustling city of Mondstadt or the lush forests of Liyue, there is always something new and exciting to discover.
+            <img src="imgs/genshin-impact-scenery-uhdpaper.com-4K-3.2969.jpg" style=" top:25px; margin-bottom: 20px;" alt="Image" class="responsive-image">
+            <span class="divid3r" style="margin-bottom: 25px;"></span>
+            <h1>Characters:</h1>
+            Another aspect that sets Genshin Impact apart is its cast of characters. Each character is unique, with their personalities, abilities, and backstories, making them feel like real individuals rather than just game avatars. The game's writing is also top-notch, with a compelling main story that is both emotionally resonant and thematically rich.
+            <div class="char-cards">
+                <div class="card" style="background: url('imgs/keqing_genshin_impact_character_render_by_deg5270_de911b7-fullview.png'); background-size:250px; background-repeat: no-repeat; background-position-y:50% ; background-position-x:50%;"></div>
+                <div class="card" style="background: url('imgs/2020031220015487912.png'); background-size:250px; background-repeat: no-repeat; background-position-y:50% ; background-position-x:-100%;"></div>
+                <!-- <div class="card" style="background: url('6d512d56ac7ee8181b6fecb8b53c8941_692004913353329817.png'); background-size:250px; background-repeat: no-repeat; background-position-y:50% ; background-position-x:-100%;"></div> -->
+
+                
+            </div>
+            <div class="advertisement" style="margin: 0px;" id="advertisement">
+
+                <span class="divid3r" style="transform: translateY(-35px);"></span>
+
+                <p style="position: absolute; margin: 0 auto; justify-content: center; width: 1100px; height: 200px; transform: translateY(30%); font-size: 50px;  text-align: center; z-index: -200;"></p>
+                    <p class="prevent-select" style="margin-left:15px; position: absolute;font-weight: 900;" >#AD</p>
+                    <button class="prevent-select" type="button"  class="advert-x" onclick="Delete(this) ">✖</button>
+            </div>
+            <span class="divid3r" id="advertisement" style="margin-bottom: 20px; margin-top:37px ; "></span>
+
+            <h1>Combat System:</h1>
+            The combat system is another area where Genshin Impact shines. The game features a real-time action combat system that is fast-paced and requires quick reflexes and strategic thinking. Players can switch between characters on the fly and combine their abilities to create powerful elemental reactions. The combat system is also accessible to players of all skill levels, with a range of difficulty options and customization features.
+            <!-- <img src="2g1u4zjhv6t51.webp" style=" top:25px; margin-bottom: 20px;" alt="Image" class="responsive-image"> -->
+    
+            <div style="width:100%; justify-content: center; margin: 0 auto;" >
+                <video controls autoplay muted  loop class="video-file"   >
+                <source src="videos/Kazuha's elemental burst over water.mp4"  type="video/mp4">
+
+                </video>
+            </div>
+              <span class="divid3r" style="margin-bottom: 25px;"></span>
+            <h1>Visuals:</h1>
+            In terms of visuals, Genshin Impact is a feast for the eyes. The game's anime-inspired art style is stunning, with vibrant colors and intricate character designs. The game also features dynamic weather effects, day and night cycles, and stunning particle effects that bring the world of Teyvat to life.
+        <p style="user-select: none; margin-top:10px;opacity: 0.6;">*Drag to view images</p>
+            
+            <div id="parent"  style=" user-select: none;  height:0%; margin-top: 5px; padding: 5px; border-radius: 5px; width:100%; background-color: rgba(255, 255, 255, 0.082) ; white-space: nowrap; overflow-y:hidden;" id="dragSpace" class="items">
+                
+                <img draggable="false"  src="imgs/EjCcWiUX0AAtaZV.jpg" style=" left:200px; width: 400px;" alt="Image">
+                <img draggable="false"  src="imgs/1exs11jlp4e71.png" style=" left:200px; width: 400px;" alt="Image" >
+                <img draggable="false"  src="imgs/wp10165089-genshin-impact-scenery-wallpapers.jpg" style="  left:200px; width: 450px;" alt="Image" >
+                <img draggable="false"  src="imgs/wp9550693-genshin-impact-inazuma-wallpapers.jpg" style=" left:200px; width: 400px;" alt="Image" >
+                <img draggable="false"  src="imgs/wp7718232-traveler-genshin-impact-hd-wallpapers.jpg" style=" left:200px; width: 400px;" alt="Image" >
+                <img draggable="false"  src="imgs/wp8657149-liyue-wallpapers.jpg" style=" left:200px; width: 446.5px;" alt="Image" >
+                <img draggable="false"  src="imgs/wp9498634-genshin-impact-liyue-wallpapers.jpg" style=" left:200px; height: 225px;" alt="Image" >
+                <img draggable="false"  src="imgs/wp9660709-aesthetic-genshin-impact-wallpapers.jpg" style=" left:200px; height: 225px;" alt="Image" >
+                <img draggable="false"  src="imgs/wp9999085-genshin-impact-landscape-wallpapers.jpg" style=" left:200px; height: 225px;" alt="Image" >
+                <img  draggable="false" src="imgs/genshin-impact-2-0-ray-tracing-motivo-preciso-spiega-mihoyo-v3-529518.jpg" style=" left:200px; width: 400px;" alt="Image" >
+                <img  draggable="false" src="imgs/El Pedulo (1).jpg" style=" left:200px; width: 400px; height: 200px;" alt="Image" >
+        </div>
+            
+            <div class="advertisement" style="margin: 0px; margin-top: 35px; background: url('imgs/second\ life\ title.png'); background-size: 25%; background-repeat: no-repeat; background-color: rgba(255, 255, 255, 0.8); background-position-x: center; background-position-y: center;" id="advertisements" >
+
+                <span class="divid3r" style="margin-top: 70px; transform: translateY(-35px);"></span>
+
+                <!-- <p style="position: absolute; margin: 0 auto; justify-content: center; width: 1100px; height: 200px; transform: translateY(30%); font-size: 50px;  text-align: center; z-index: -200;">Habiburs A Paki</p> -->
+                    <p class="prevent-select" style="margin-left:15px; position: absolute; transform: translateY(5px); color:rgba(0, 0, 0, 0.8); font-weight: 900;" >#AD</p>
+                    <button type="button" class="prevent-select" style="transform: translateY(5px)" class="advert-x" onclick="Delete2(this) ">✖</button>
+            
+                </div>
+            
+                <span class="divid3r" style="margin-bottom: 25px;"></span>
+            
+            <h1>Verdict:</h1>
+            Overall, Genshin Impact is a masterpiece of gaming that is not to be missed. From its open-world design to its compelling characters, engaging combat system, and stunning visuals, the game is a tour-de-force that sets a new standard for the action RPG genre.
+            <h1><br>Rating:</h1>
+        
+            <div style="    height: 200px;     width: 100%;  min-width: 280px !important; background-color: var(--secondary-colour); outline: solid var(--logo-colour) 2px;     border-radius: 10px;     backdrop-filter: blur(1px);">
+                <div class="rating">
+                    <div class="rating-image">
+                        <img src="imgs/Cropped-Hexagon-Transparent-Background.png" alt="" draggable="false">
+                    </div>
+                    <p style="text-align:center" contenteditable="true" id="ratingcounter" class="rating-text"></p>
+                    <p style="text-align:left; font-weight: 0px;" contenteditable="true" id="rating-rank" class="rating-title">flawless</p>
+                    <p style="text-align:left" contenteditable="true" class="rating-description">Genshin Impact is a well-crafted, free-to-play action <br> RPG with stunning graphics and innovative gameplay mechanics.</p>
+                    <!-- <p style="text-align:center" contenteditable="true" class="rating-subtext">scroll down to read our review.</p> -->
+                    
+                </div>
+
+            </div>
+            <span class="divid3r" style="margin-bottom: 0px;"></span>
+            <h1><br>Read More:</h1>
+
+
+
+            
+        </div>
+
+        
+
+        </div>
+  
+   </section>
+
+<section class="homepage-container" style="transform:translate(-47px,-40px) !important;margin-top:0 !important;">
+    <div class="stories">
+        <div class="story-1">
+            <div class="card-image"></div>
+
+
+
+        </div>
+        <div class="story-text">
+            <h2>Sekiro: Shadows Die Twice: A Game of Skill and Stealth</h2>
+        </div>
+        
+
+    </div>
+    
+    <div class="stories">
+        <div class="story-2">
+        <div class="card-image"></div>
+
+
+        </div>
+        <div class="story-text">
+            <h2>Heroes Assemble: The Best Overwatch Teams for Competitive Play</h2>
+        </div>
+    </div>
+    <div class="stories">
+        <div class="story-3">
+
+        </div>
+        <div class="card-image"></div>
+        <div class="story-text">
+            <h2>The Secrets of Super Mario Odyssey: Discovering the Power Moons of the World</h2>
+        </div>
+    </div>
+
+</section>
+    <footer>
+        <div class="containers" style="margin-top: 20px; margin-bottom: 20px;">
+          <div class="logo">
+            <!-- <img src="logo.png" alt="Logo"> -->
+            <p style="font-size: 18px;"><i class='bx bx-pause-circle' ></i> AFK GAMING</p>
+          </div>
+          <div class="text"></div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+          </div>
+        </div>
+      </footer>
+      
+
+    <script>
+        const scrollable = document.getElementById("scrollable");
+        scrollable.addEventListener("mouseout", function() {
+          scrollable.scrollTop = 0;
+        });
+      </script>
+
+    <script src="script.js"></script>
+
+
+
+
+
+
+<script>    
+    var darkmode_toggle = document.getElementById("darkmode_toggle");
+    darkmode_toggle.onclick = function(){
+        this.classList.toggle('bx-sun')
+        
+        document.body.classList.toggle("light-theme")
+
+
+    }
+
+</script>
+
+
+
+<script>
+    let countSpace = document.getElementById('ratingcounter');
+    let countRank = document.getElementById('rating-rank');
+
+
+    let countNum = 0;
+
+    setInterval(() =>{
+        if(countNum < 10 ){
+            countNum += 1;
+            countSpace.innerText = countNum;
+        }
+    }, 400);
+
+</script>
+
+
+<script>
+    const slider = document.querySelector('.items');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        startX = e.pageX -slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+        console.log(startX)
+        slider.classList.add('grabbing')
+    });
+
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('grabbing')
+
+    });
+
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('grabbing')
+
+    });
+
+    slider.addEventListener('mousemove', (e) => {
+        if(!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = x - startX;
+        slider.scrollLeft = scrollLeft - walk;
+    });
+
+</script>
+
+<script>
+    const options = document.querySelectorAll("label");
+    for (let i = 0; i < options.length; i++) {
+    options[i].addEventListener("click", ()=>{
+        for (let j = 0; j < options.length; j++) {
+        if(options[j].classList.contains("selected")){
+            options[j].classList.remove("selected");
+        }
+        }
+
+        options[i].classList.add("selected");
+        for (let k = 0; k < options.length; k++) {
+        options[k].classList.add("selectall");
+        }
+
+        let forVal = options[i].getAttribute("for");
+        let selectInput = document.querySelector("#"+forVal);
+        let getAtt = selectInput.getAttribute("type");
+        if(getAtt == "checkbox"){
+        selectInput.setAttribute("type", "radio");
+        }else if(selectInput.checked == true){
+        options[i].classList.remove("selected");
+        selectInput.setAttribute("type", "checkbox");
+        }
+
+        let array = [];
+        for (let l = 0; l < options.length; l++) {
+        if(options[l].classList.contains("selected")){
+            array.push(l);
+        }
+        }
+        if(array.length == 0){
+        for (let m = 0; m < options.length; m++) {
+            options[m].removeAttribute("class");
+        }
+        }
+    });
+    }
+
+</script>
+</body>
+</html>

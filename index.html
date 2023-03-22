@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>AFK - Homepage</title>
+    <link rel="shortcut icon" type="image/x-icon" href="pause-circle-regular-24.png" />
+
+
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <a href="https://www.google.com/">
+                    <!-- <i class='bx bx-game bx-tada' ></i> -->
+                    <i class='bx bx-pause-circle '  ></i>
+                    
+                    <div class="logo_name">AFK</div>
+                </a>
+            </div>
+            <i class='bx bx-menu' id="button"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a class="home_button" href="homepage.html" id="">
+                    <i class='bx bx-home-alt' id="home_icon"></i>
+                    <span class="links_name" id="home_label">Home</span>
+                    
+                </a>
+                
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <span class="divider"></span>
+            
+            
+
+            
+            <li >
+                <a href="#" style="background: var(--secondary-colour);">
+                    <i class='bx bx-edit' ></i>
+                    <span class="links_name">Reviews</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-news ' ></i>
+                    <span class="links_name">News</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-wifi bx-rotate' ></i>
+
+                    <span class="links_name">Socials</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+
+                    <i class='bx bx-play-circle' ></i>
+                    <span class="links_name">Videos</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-bulb' ></i>
+                    <span class="links_name">FAQ</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-happy-beaming' ></i>
+                    <span class="links_name">About Us</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <span class="divider2"></span>
+            <li>
+                <span class="sociallabel">SOCIALS</span>
+            </li>
+            <li>
+                
+                <a href="#">
+                    
+                    <i class='bx bxl-youtube'></i>
+                    <span class="links_name">YouTube</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxl-tiktok'></i>
+                    <span class="links_name">TikTok</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxl-instagram'></i>
+                    <span class="links_name">Instagram</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxl-twitter'></i>
+                    <span class="links_name">Twitter</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <span class="divider3"></span>
+            <li>
+                <a href="#">
+                    <i class='bx bx-copyright'></i>
+                    <span class="links_name">Copyright 2022</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="profile.jpg" alt="">
+                    <div class="name_title">
+                        <div contenteditable="true" class="profile_name" >Shazmul</div>
+                        <div contenteditable="true" class="profile_title">Blog Writer</div>
+                        
+                       
+                    </div>
+                </div>
+                <i class='bx bx-moon' id="darkmode_toggle"></i>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </div>
+        </div>
+    </div>
+    <div class="homepage_content">
+        
+        <img src="desktop-1.jpg" alt="" draggable="false">
+    </div>
+
+    <section class="home">
+        <a href="https://genshin.hoyoverse.com/en/" draggable="false">
+            <div class="game-logo" >
+                
+            
+            </div>
+        </a>
+        
+        <!-- <div class="text">
+            <video  autoplay="autoplay" width="640" height="360" loop controls poster="trailer1-thumbnail.jpg">
+                <source src="trailer.mp4" type="video/mp4"></video>
+                
+        </div> -->
+
+
+    </section>
+    <div class="rating">
+        <div class="rating-image">
+            <img src="Cropped-Hexagon-Transparent-Background.png" alt="" draggable="false">
+        </div>
+        <p style="text-align:center" contenteditable="true" id="ratingcounter" class="rating-text"></p>
+        <p style="text-align:left; font-weight: 0px;" contenteditable="true" class="rating-title">flawless</p>
+        <p style="text-align:left" contenteditable="true" class="rating-description">Genshin Impact is a well-crafted, free-to-play action     RPG with stunning graphics and innovative gameplay mechanics.</p>
+        <p style="text-align:center" contenteditable="true" class="rating-subtext">scroll down to read our review.</p>
+        
+    </div>
+    <div class="game-vote">
+        <header>which element do you prefer to use in combat</header>
+        <div class="poll-area">
+            <label for="">
+                <div class="row">
+                    <div class="column">
+                        <span class="circle"></span>
+                        <span class="text">Anemo (Wind)</span>
+                    </div>
+                    <span class="percent">64%</span>
+                </div>
+                <div class="progress" style="--w:64"></div>
+            </label>
+            <label for="">
+                <div class="row">
+                    <div class="column">
+                        <span class="circle"></span>
+                        <span class="text">Cryo (Ice)</span>
+                    </div>
+                    <span class="percent">10%</span>
+                </div>
+                <div class="progress" style="--w:10"></div>
+            </label>
+            <label for="">
+                <div class="row">
+                    <div class="column">
+                        <span class="circle"></span>
+                        <span class="text">Electro (Lightning)</span>
+                    </div>
+                    <span class="percent" >5%</span>
+                </div>
+                <div class="progress"style="--w:5"></div>
+            </label>
+            <label for="">
+                <div class="row">
+                    <div class="column">
+                        <span class="circle"></span>
+                        <span class="text">Pyro (Fire)</span>
+                    </div>
+                    <span class="percent">21%</span>
+                </div>
+                <div class="progress" style="--w:21"></div>
+            </label>
+        </div>
+
+        
+    </div>
+
+
+
+    <div class="video">
+        <iframe style="border: solid rgba(0,0,0,0.3) 10px; border-radius: 10px;" width="555" height="320" src="https://www.youtube.com/embed/CTWxnQawAqE?start=122" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <section class="blog-content">
+        <div class="blog-container">
+            <div class="review-heading-text">GENSHIN IMPACT</div>
+            <div class="review-title-text">Genshin Impact: Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+            <div class="review-blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+            <img src="11453.jpg" style="border-radius: 20px" class="review-img" alt="">
+            <div class="review-author">By Shazmul</div>
+
+            </div>
+
+            
+        </div>
+        <div class="row">
+            <div>
+                
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+
+
+                
+            </div>
+            <div>
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+
+
+                
+            </div>
+            <div>
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+
+
+                
+            </div>
+            <div>
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+
+
+                
+            </div>
+            <div>
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+
+
+                
+            </div>
+            <div>
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+
+
+                
+            </div>
+            <div>
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+
+
+                
+            </div>
+            <div>
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+
+
+                
+            </div>
+            <div>
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+            </div>
+            <div>
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+            </div>
+            <div>
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+            </div>
+            <div>
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+
+
+                
+            </div>
+            <div>
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+                
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+
+
+                
+            </div>
+            <div>
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                <img draggable="false" src="1.png" alt="">
+                <img draggable="false" src="2.png" alt="">
+                <img draggable="false" src="3.png" alt="">
+                <img draggable="false" src="4.png" alt="">
+                <img draggable="false" src="5.png" alt="">
+                <img draggable="false" src="6.png" alt="">
+                <img draggable="false" src="7.png" alt="">
+                
+            </div>
+        </div>
+
+
+        
+
+        
+        <div class="blog-header">
+            <h1></h1>
+        </div>
+
+    </section>
+    
+    <section>hello</section>
+
+
+
+
+
+
+
+
+<script>    
+    var darkmode_toggle = document.getElementById("darkmode_toggle");
+    darkmode_toggle.onclick = function(){
+        this.classList.toggle('bx-sun')
+        
+        document.body.classList.toggle("light-theme")
+
+
+    }
+
+</script>
+
+<script>
+    const options = document.querySelectorAll("label");
+    for (let i = 0; i < options.length; i++) {
+    options[i].addEventListener("click", ()=>{
+        for (let j = 0; j < options.length; j++) {
+        if(options[j].classList.contains("selected")){
+            options[j].classList.remove("selected");
+        }
+        }
+
+        options[i].classList.add("selected");
+        for (let k = 0; k < options.length; k++) {
+        options[k].classList.add("selectall");
+        }
+
+        let forVal = options[i].getAttribute("for");
+        let selectInput = document.querySelector("#"+forVal);
+        let getAtt = selectInput.getAttribute("type");
+        if(getAtt == "checkbox"){
+        selectInput.setAttribute("type", "radio");
+        }else if(selectInput.checked == true){
+        options[i].classList.remove("selected");
+        selectInput.setAttribute("type", "checkbox");
+        }
+
+        let array = [];
+        for (let l = 0; l < options.length; l++) {
+        if(options[l].classList.contains("selected")){
+            array.push(l);
+        }
+        }
+        if(array.length == 0){
+        for (let m = 0; m < options.length; m++) {
+            options[m].removeAttribute("class");
+        }
+        }
+    });
+    }
+
+</script>
+</body>
+</html>

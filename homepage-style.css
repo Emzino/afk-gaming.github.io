@@ -1,0 +1,768 @@
+
+
+
+body{
+    transition: all 0.25s ease;
+    background-color: var(--secondary-bg);
+}
+  @media (max-width: 1700px) {
+    .homepage-container {
+      float:middle;
+      width: 80%;
+      justify-content: center;
+
+        
+    }
+    .homepage-header{
+        padding-left:0px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    #posts .post-item{
+      margin-left: 31.5%;
+    }
+  }
+
+
+.homepage-container{
+    display: flex;
+    justify-content: center;
+    padding-left:305px;
+    overflow: show;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+}
+
+.card{
+    position: relative;
+    /* background-color: #CAC39F; */
+    width: 282px;
+    min-width: 282px;
+    height: 470px;
+    /* margin: 12px; */
+    margin: 20px;
+
+    border-radius: 8px;
+    margin-top: 55px;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 3px var(--hover-colour);
+    
+}
+
+.card-highlight{
+    position: absolute;
+    /* background-color: rgba(255,255,255,0.35); */
+    background-color: rgba(255,255,255,.6);
+
+    backdrop-filter: blur(1.5px);
+
+    width: 100%;
+    height: 150px;
+    margin-top: 320px;
+    border-radius: 8px;
+    overflow:none;
+}
+
+.card-text{
+    margin: 10px;
+    
+    
+}
+
+.card:hover{
+    scale: 1.03;
+    filter:brightness(1.1);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.card h2{
+    text-align: center;
+    color: white;
+    font-weight: 900;
+}
+
+.card p{
+    margin-top: 7px;
+    color: white;
+    
+}
+
+.card:hover h2, .card:hover p{
+}
+
+.card-1{
+    border-radius: 8px;
+    height: 100%;
+    background-image: url(imgs/Character_Paimon_Card.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    filter: brightness(0.9);
+
+}
+
+.card-1 .card-highlight{
+    background-color: rgba(235, 212, 177, 0.601);
+
+}
+
+.card-2 .card-highlight{
+    background-color: rgba(166, 205, 252, 0.601);
+}
+
+.card-3 .card-highlight{
+    background-color: rgba(252, 166, 238, 0.601);
+}
+
+.card-4 .card-highlight{
+    background-color: rgba(245, 158, 158, 0.601);
+}
+.card-2{
+    border-radius: 8px;
+    height: 100%;
+    background-color: #B3E9E2;
+    background-image: url(imgs/TOTK.jpg);
+    background-size: 298%;
+    background-repeat: no-repeat;
+    background-position: -280px 0px;
+
+}
+
+.card-3{
+    border-radius: 8px;
+    height: 100%;
+    background-color: #BDC3E7;
+    background-image: url(imgs/wallpapersden.com_minecraft-dungeons-4k-gaming-poster_3840x2160.jpg);
+    background-size: 400%;
+    background-position: -430px -165px;
+}
+.card-4{
+    border-radius: 8px;
+    height: 100%;
+    background-color: #F47878;
+    background-image: url(imgs/VALORANT_Jett_Red.jpg);
+    background-size: 170%;
+    background-position: -100px 0px;
+
+
+}
+
+.homepage-header{
+    display: flex;
+    justify-content: center;
+    padding-left:305px;
+    margin: 75px 0 15px 0;
+    text-align: right;
+
+}
+
+
+.homepage-header h2{
+    color: var(--logo-colour);
+    font-size: 40px;
+    font-family: 'Inter-', sans-serif;
+    transform: translateX(-490px);
+    text-align: right;
+    
+
+
+}
+
+.stories{
+    position: relative;
+    /* background-color: #CAC39F; */
+    width: 282px;
+    min-width: 282px;
+    height: 158.625px;
+    margin: 12px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 3px var(--hover-colour);
+    margin-bottom: 100px;
+    line-height: 1.5;
+    
+}
+
+.stories:hover{
+    scale: 1.03;
+    text-underline-offset: 2.5px;
+    text-decoration: underline;
+    color:var(--logo-colour);
+    cursor: pointer;
+}
+
+.story-1{
+    border-radius: 8px;
+    height: 100%;
+    background-size: 100%;
+    background-color: rgba(203, 203, 203, 0.838);
+    background-repeat: no-repeat;
+    filter: brightness(0.9);
+    background-image: url(imgs/Sekiro-Shadows-Die-Twice-wallpaper-2.jpg);
+    background-size: cover;
+
+}
+.story-2{
+    border-radius: 8px;
+    height: 100%;
+    background-size: 100%;
+    background-color: rgba(203, 203, 203, 0.838);
+
+    background-repeat: no-repeat;
+    filter: brightness(0.9);
+    background-image: url(imgs/Q4K237E1EGPI1467079634956.jpg);
+    background-size: cover;
+    background-position: 52%;
+    
+}
+.story-3{
+    border-radius: 8px;
+    height: 100%;
+    background-size: 100%;
+    background-color: rgba(203, 203, 203, 0.838);
+    background-image: url(imgs/maxresdefault.jpg);
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    filter: brightness(0.9);
+
+}
+.story-4{
+    border-radius: 8px;
+    height: 100%;
+    background-size: 100%;
+    background-color: rgba(203, 203, 203, 0.838);
+    background-image: url(imgs/call-of-duty-modern-warfare-2-2022-games-call-of-duty-3840x2160-8565.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(0.9);
+
+}
+
+.story-text h2{
+    margin: 15px 0 0 0;
+    color: var(--logo-colour);
+    font-size: 15px;
+    width: 90%;
+
+}
+
+.filter-header{
+    display: flex;
+    justify-content: center;
+    padding-left:305px;
+    margin: 75px 0 15px 0;
+    text-align: left;
+}
+
+.filter-header h2{
+    color: var(--logo-colour);
+    font-size: 40px;
+    font-family: 'Inter-', sans-serif;
+    width: 1200px;
+    
+    
+}
+
+#myBtn {
+    display: block; /* Hidden by default */
+    opacity: 0;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 35px; /* Place the button at the bottom of the page */
+    right: 5%; /* Place the button 30px from the right */
+    width: 75px;
+    height: 75px;
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background: url('scroll-to-top1.svg');
+    background-size:cover;
+    
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    transition: all 0.25s ease;
+    animation: bump 0.75s ease-in-out infinite;
+    z-index: 99999999;
+    filter:invert(var(--toggle-scroll-up));
+  }
+  
+  #myBtn:hover {
+    background-color: rgba(117, 116, 116, 0.1); /* Add a dark-grey background on hover */
+  }
+
+
+ @keyframes bump {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+#posts {
+  width: 900px;
+  margin: 0 auto;
+
+
+}
+
+.filters {
+  width: 1200px;
+  margin-bottom: 40px;
+  text-align: center;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  
+}
+
+.filter-btn {
+  background-color: rgba(138, 147, 153, 0.15);
+  border: 0px solid #ccc;
+  padding: 10px 20px;
+  /* margin-right: 10px; */
+  margin-right: 2.5px;
+  
+  width: 120px;
+  height: 44px;
+  /* border-radius: 6px; */
+
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 1000;
+  color: white;
+  transition: all 0.25s ease;
+
+}
+
+.all{
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.latest{
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.filter-btn:hover {
+  background-color: rgba(138, 147, 153, 0.528);
+  transform: translateY(-2.5px);
+
+}
+.filter-btn.active {
+  background-color: var(--logo-colour);
+  color: var(--secondary-bg);
+  transform: translateY(-5%);
+  text-decoration: underline;
+}
+
+.post-item {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  transition: all 0.5s ease;
+  opacity: 1;
+  color: var(--logo-colour);
+  font-size: 13px;
+  transition: all 0s ease;
+  padding-bottom: 2.5px;
+  padding-top: 2.5px;
+}
+
+.post-item.hidden {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.post-item:hover{
+  cursor: pointer;
+}
+
+.post-left {
+  width: 250px;
+  height: 135px;
+}
+
+.post-left img {
+  width: 240px;
+  height: 135px;
+  border-radius: 8px;
+  box-shadow: 0 0 3px var(--hover-colour);
+
+}
+
+.post-right {
+  padding-left: 20px;
+  font-size: 12px;
+  
+}
+.post-right h2{
+  margin-bottom: 8px;
+  
+}
+
+
+.post-item:hover {
+  background-color: rgba(117, 116, 116, 0.1);
+  border-radius: 5px;
+  filter: brightness(1.075);
+}
+
+
+.post-item:hover h2{
+  text-decoration: underline;
+}
+
+
+/*  */
+
+
+
+
+/* POST */
+.game-info {
+  display: flex;
+  align-items: center;
+}
+
+.game-info i {
+  margin-right: 0.5em;
+  color: #828282; /* adjust color as needed */
+  margin-top: 8px;
+  font-size: 13px;
+  
+}
+
+.game-info h2, .game-info p {
+  margin: 0;
+  margin-top: 8px;
+  margin-right: 15px;
+  font-size: 0.6625rem;
+  font-weight: bolder;
+  /* color: #yyy; adjust color as needed */
+
+
+}
+.game-info h2:hover, .game-info p:hover {
+}
+/*  */
+
+footer {
+  background-color: var(--secondary-colour);
+  color: var(--logo-colour);
+  
+  padding: 20px 0;
+  margin-top: 60px;
+  box-shadow: 0 0 10px var(--primary-colour);
+  transition: all 0.1s ease;
+}
+
+.containers {
+  max-width: 1200px;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 150px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  max-width: 150px;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  display: inline-block;
+  color: var(--logo-colour);
+  font-size: 1.5em;
+  margin: 0 10px;
+
+}
+
+.social-icons a:hover {
+  color: var(--hover-colour);
+}
+
+.fab {
+  font-size: inherit;
+  transition: all 0.2s ease-in-out;
+}
+
+.fab:hover {
+}
+
+.sponsor-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%; /* set the maximum width of the container */
+  margin: 100px auto; /* to center the container */
+  height: 540px;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("imgs/wp7707276.jpg");
+  background-size: 70%;
+  background-position-y: 26%;
+  background-position-x: 150px;
+  background-repeat:space;
+  background-repeat: repeat;
+  background-size: cover;
+  box-shadow: 0 0 10px var(--primary-colour);
+  transition: all 0.5 ease;
+
+}
+
+.sponsor-container .text{
+  
+  margin-left: 150px;
+  text-align: left;
+}
+.sponsored-text-header{
+  font-size: 70px;
+  color: white;
+  
+
+}
+
+.sponsored-text-desc{
+  color: white;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.sponsor-container button{
+  display:block;
+  padding: 0;
+  margin: 20px 0 0 0;
+  border: solid 1px rgb(185, 179, 179);
+  width: 150px;
+  height: 40px;
+  background: white;
+  font-size: 15px;
+  color: black;
+  font-weight: 550;
+  border-radius: 10px;
+}
+
+.sponsor-container button:hover{
+  filter: brightness(0.85);
+  cursor: pointer;
+
+}
+
+.sponsor-container .guide:hover{
+  background-color: rgb(246, 196, 196);
+  border: solid 1px rgb(246, 108, 108);
+
+  cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+.game-vote-main{
+  position:relative;
+  top: none;
+  width: 50%;
+  max-width: 1200px;
+  left: 170px;
+  background-color: rgba(0,0,0,0.23);
+  outline: solid rgba(255,255,255,0.75) 2px;
+  border-radius: 10px;
+  backdrop-filter: blur(1px);
+  padding: 25px;
+  color: white;
+  user-select: none; 
+  z-index: 200;
+  margin: 0 auto;
+  justify-content: center;
+  
+
+
+}
+
+
+
+.game-vote-main .vote-header{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-variant: small-caps;
+  
+}
+
+.game-vote-main .vote-header header{
+  width: 70%;
+}
+
+.game-vote-main img{
+  display: flex;
+  height: 200px;
+  width: 200px;
+  background-image: url(imgs/smash_illo.0.jpg);
+  background-size: cover;
+  background-position: 56%;
+  justify-content: right;
+  text-align: right;  
+  border-radius: 5px;
+  border: 1px solid white;
+  float: right;
+  margin-left: 8%;
+  z-index: -2;
+}
+
+.game-vote-main .poll-area{
+  margin: 20px 0 0px 0;
+  backdrop-filter: blur(2px);
+  
+
+  
+  
+}
+
+.poll-area label{
+  display: block;
+  border: 0px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  background-color: rgba(255,255,255,0.08);
+  transition: all 0.2s ease;
+  
+}
+
+label.selected{
+
+}
+
+label .row{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+label .row .column{
+  display: flex;
+  align-items: center;
+}
+
+label .row .circle{
+  height: 19px;
+  width: 19px;
+  display: relative;
+  margin-right: 10px;
+  border: 2px solid #ccc;
+
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  
+
+}
+
+label.selected .row .circle{
+  border-color: rgb(178, 171, 236);
+}
+.row .circle::after{
+  content: "";
+  position: absolute;
+  height: 11px;
+  display: block;
+
+  width: 11px;
+  left: 20px;
+  translate: 0px 2px;
+  border-radius: inherit;
+  transition: all 0.2s ease;
+
+  
+
+}
+label.selected .row .circle::after{
+  display: block;
+  background: rgb(178, 171, 236)!important;
+}
+
+label:hover .row .circle::after{
+  opacity: 100;
+  display: block;
+
+
+  background-color: #e6e6e6;
+
+}
+
+label .row span{
+}
+
+label .row .percent{
+  display:none;
+  transform: translateY(5px);
+
+}
+
+
+
+label .progress{
+  height: 2px;
+  width: 100%;
+  position: relative;
+  margin: 8px 0 3px 0;
+  background: none;
+  border-radius: 30px;
+  display: none;
+  
+}
+
+label .progress::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: calc(1%*var(--w));
+  /* background-color: #b3e0ff; */
+  background-color: rgb(164, 164, 164);
+
+  border-radius: inherit;
+
+}
+label.selected .progress::after{
+  background-color: rgb(128, 115, 250);
+
+}
+
+label.selectall :is(.percent, .progress){
+  display: block;
+}

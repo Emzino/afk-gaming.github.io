@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Warning Example</title>
+	<style>
+		#warning {
+			display: flex;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			align-items: center;
+			justify-content: center;
+			background-color: rgba(0,0,0,0.5);
+			color: white;
+			font-weight: bold;
+			font-size: 24px;
+			text-align: center;
+			z-index: 999;
+		}
+		
+		#warning button {
+			padding: 10px 20px;
+			background-color: white;
+			color: black;
+			font-size: 18px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 20px;
+		}
+	</style>
+	<script>
+		function checkResolution() {
+			var width = window.screen.width;
+			var height = window.screen.height;
+			if (width != 1920 || height != 1080) {
+				document.getElementById("warning").style.display = "flex";
+			}
+		}
+
+		function dismissWarning() {
+			document.getElementById("warning").style.display = "none";
+		}
+	</script>
+</head>
+<body onload="checkResolution()">
+	<div id="warning">
+		<p>Warning: Your display resolution is not 1920x1080p.</p>
+		<button onclick="dismissWarning()">Dismiss</button>
+	</div>
+	<!-- Your other HTML content here -->
+</body>
+</html>
