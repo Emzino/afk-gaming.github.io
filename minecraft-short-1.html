@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="homepage-style.css">
+    <link rel="stylesheet" href="review-stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    <title>AFK - Minecraft - Noob Vs Pro</title>
+    <link rel="shortcut icon" type="image/x-icon" href="pause-circle-regular-24.png" />
+
+	<script>
+		function checkResolution() {
+			var width = window.screen.width;
+			var height = window.screen.height;
+			var ratio = width / height;
+			if (ratio < 16/9) {
+				document.getElementById("warning").style.display = "flex";
+                
+			}
+		}
+
+		function dismissWarning() {
+            const warning = document.getElementById("warning");
+            warning.style.transition = "opacity 0.5s ease"; // Add transition effect
+            warning.style.opacity = 0; // Fade out element
+            setTimeout(function() {
+                warning.style.display = "none"; // Hide element after animation is complete
+            }, 500); // Set timeout to match transition duration
+        }
+	</script>
+</head>
+<!-- <body onload="checkResolution()">
+
+
+	<div id="warning">
+		<p >Warning: View in 1920x1080 or higher for the best experience.<br>  <button onclick="dismissWarning()">Dismiss</button>  </p>
+	
+    </div> -->
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <a href="homepage.html">
+                    <!-- <i class='bx bx-game bx-tada' ></i> -->
+                    <i class='bx bx-pause-circle '  ></i>
+                    
+                    <div class="logo_name">AFK</div>
+                </a>
+            </div>
+            <i class='bx bx-menu' id="button"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="homepage.html" id="home">
+                    <i class='bx bx-home-alt' id="home_icon"></i>
+                    <span class="links_name" id="home_label">Home</span>
+                    
+                </a>
+                
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <span class="divider"></span>
+            
+            
+
+            
+            <li>
+                <a href="index.html">
+                    <i class='bx bx-edit' ></i>
+                    <span class="links_name">Reviews</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-news ' ></i>
+                    <span class="links_name">News</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-wifi bx-rotate' ></i>
+
+                    <span class="links_name">Socials</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+
+                    <i class='bx bx-play-circle' ></i>
+                    <span class="links_name">Videos</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-bulb' ></i>
+                    <span class="links_name">FAQ</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-happy-beaming' ></i>
+                    <span class="links_name">About Us</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <span class="divider2"></span>
+            <li>
+                <span class="sociallabel">SOCIALS</span>
+            </li>
+            <li>
+                
+                <a href="#">
+                    
+                    <i class='bx bxl-youtube'></i>
+                    <span class="links_name">YouTube</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxl-tiktok'></i>
+                    <span class="links_name">TikTok</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxl-instagram'></i>
+                    <span class="links_name">Instagram</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxl-twitter'></i>
+                    <span class="links_name">Twitter</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+            <span class="divider3"></span>
+            <li>
+                <a href="#">
+                    <i class='bx bx-copyright'></i>
+                    <span class="links_name">Copyright 2022</span>
+                </a>
+                <!-- <span class="links_name">Reviews</span> -->
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="imgs/profile.jpg" alt="">
+                    <div class="name_title">
+                        <div contenteditable="true" class="profile_name" >Shazmul</div>
+                        <div contenteditable="true" class="profile_title">Blog Writer</div>
+                        
+                       
+                    </div>
+                </div>
+                <i class='bx bx-moon' id="darkmode_toggle"></i>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </div>
+        </div>
+    </div>
+    
+   <section>
+    <div class="division-container">
+        <div class="title">
+            <p>Minecraft</p>
+
+            <h2>Minecraft - Noob Vs Pro</h2>
+            <h1 style="font-size: 20px ;">Who's smarter? A Noob or a Pro?</h1>
+
+
+        </div>
+        <iframe width="454" style="border-radius:10px;margin-bottom:20px;" height="806" src="https://www.youtube.com/embed/s6gKuyRP34I" title="Minecraft Noob Vs Pro #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <div class="credit">
+            <img class="pfp" src="imgs/profile.jpg" alt="">
+            <h1>Author:  <a class="underline-text"> Shazmul</a></h1>
+            <h2>POSTED: MAR 12, 2023</h2>
+    
+        </div>    
+        <span class="divid3r"></span>
+        <div class="content"><h1></h1>
+
+      
+
+            <div class="share">Share The Article</div>
+            <div class="share-buttons">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:3000/hollow-knight-review.html" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/intent/tweet?url=http://127.0.0.1:3000/hollow-knight-review.html" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://discord.com/" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+
+
+
+                <button id="copy-url-button"><i class="fas fa-copy"></i></button>
+              </div>
+
+            <span class="divid3r" style=""></span>
+
+            <h1 ><br>Read More:</h1>
+
+
+
+            
+            </div>
+        </div>
+  
+   </section>
+
+<section class="homepage-container" style="transform:translate(-47px,-40px) !important;margin-top:0 !important;">
+    <a href="review-template.html" style="text-decoration: none; text-decoration-color: white;">
+    
+        <div class="stories" >
+            <div class="story-1" style="background-image: url('imgs/genshin-impact-4k-5c.jpg') !important;">
+                <div class="card-image" ></div>
+
+
+
+            </div>
+            
+            <div class="story-text">
+                <h2 style="text-decoration: none;">Genshin Impact: Review</h2>
+        </div>
+    </a>
+        
+
+    </div>
+    
+    <div class="stories">
+        <div class="story-2">
+        <div class="card-image"></div>
+
+
+        </div>
+        <div class="story-text">
+            <h2>Heroes Assemble: The Best Overwatch Teams for Competitive Play</h2>
+        </div>
+    </div>
+    <div class="stories">
+        <div class="story-3">
+
+        </div>
+        <div class="card-image"></div>
+        <div class="story-text">
+            <h2>The Secrets of Super Mario Odyssey: Discovering the Power Moons of the World</h2>
+        </div>
+    </div>
+
+</section>
+<section>
+    
+    <div class="division-container">
+        <span class="divid3r" style=""></span>
+
+        <div class="title">
+
+            <h1 style="font-weight: 900;"><br>Comments:</h1>
+
+            <form style="margin-top: 30px;">
+                <label for="comment"></label>
+                <textarea id="comment" name="comment" placeholder="Enter your comment..."></textarea><br><br>
+                <input class="submite" style="margin-left: 94%; padding: 5px;" type="submit" value="Submit" >
+              </form>
+              
+              <div id="comment-section">
+                <div class="comment">
+                    <img src="imgs/default-pfp-29.jpg"  alt="Profile Picture">
+                    <div class="comment-details">
+                      <h3>Habibur <p1 style="font-size: 15px; font-weight:lighter;">(1hr ago)</p1></h3>
+                      <span class="comment-time"></span> <!-- Add this span element for the time -->
+                      <p>hahaha i loved this video</p>
+                    </div>
+                  </div>
+
+                  <div class="comment">
+                    <img src="imgs/default-pfp-36.jpg" alt="Profile Picture">
+                    <div class="comment-details">
+                      <h3>Jett <p1 style="font-size: 15px; font-weight:lighter;">(1hr ago)</p1></h3>
+                      <span class="comment-time"></span> <!-- Add this span element for the time -->
+                      <p>really cool concept!</p>
+                    </div>
+                  </div>
+
+                  <div class="comment">
+                    <img src="imgs/default-pfp-19.jpg" style="image-resolution: 20px;" alt="Profile Picture">
+                    <div class="comment-details">
+                      <h3>Benjamin <p1 style="font-size: 15px; font-weight:lighter;">(1hr ago)</p1></h3>
+                      <span class="comment-time"></span> <!-- Add this span element for the time -->
+                      <p>loved it!</p>
+                    </div>
+                  </div>
+
+
+                  
+              </div>
+              
+              <script>
+              const form = document.querySelector('form');
+              const commentInput = document.querySelector('#comment');
+              const commentSection = document.querySelector('#comment-section');
+              
+              form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const name = 'Shazmul '; // Set the name to "Shaz"
+                const comment = commentInput.value;
+                const commentElement = document.createElement('div');
+                commentElement.classList.add('comment');
+                commentElement.innerHTML = `
+                  <img src="imgs/profile.jpg" alt="Profile Picture">
+                  <div class="comment-details">
+                    <h3>${name}<p1 style="font-size: 15px; font-weight:lighter; "> (now)</p1> <br> <p1 style="font-size: 15px; font-weight:lighter;  color:coral;">(Blog Writer)</p1> </h3>
+                    <p>${comment}</p>
+                  </div>
+                `;
+                commentSection.appendChild(commentElement);
+                commentInput.value = '';
+              });
+              </script>
+        </div>
+        
+          
+        
+</section>
+
+
+
+
+
+    <footer>
+        <div class="containers" style="margin-top: 20px; margin-bottom: 20px;">
+          <div class="logo">
+            <!-- <img src="logo.png" alt="Logo"> -->
+            <p style="font-size: 18px;"><i class='bx bx-pause-circle' ></i> AFK GAMING</p>
+          </div>
+          <div class="text"></div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+          </div>
+        </div>
+      </footer>
+      
+
+    <script>
+        const scrollable = document.getElementById("scrollable");
+        scrollable.addEventListener("mouseout", function() {
+          scrollable.scrollTop = 0;
+        });
+      </script>
+
+
+<script>
+    let countSpace = document.getElementById('ratingcounter');
+    let countRank = document.getElementById('rating-rank');
+
+
+    let countNum = 0;
+
+    setInterval(() =>{
+        if(countNum < 8 ){
+            countNum += 1;
+            countSpace.innerText = countNum;
+        }
+    }, 400);
+
+</script>
+<script src="script.js"></script>
+
+
+
+<script>    
+    var darkmode_toggle = document.getElementById("darkmode_toggle");
+    darkmode_toggle.onclick = function(){
+        this.classList.toggle('bx-sun')
+        
+        document.body.classList.toggle("light-theme")
+
+
+    }
+
+</script>
+
+<script>
+    const slider = document.querySelector('.items');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        startX = e.pageX -slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+        console.log(startX)
+        slider.classList.add('grabbing')
+    });
+
+    slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('grabbing')
+
+    });
+
+    slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('grabbing')
+
+    });
+
+    slider.addEventListener('mousemove', (e) => {
+        if(!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = x - startX;
+        slider.scrollLeft = scrollLeft - walk;
+    });
+
+</script>
+
+<script>
+    document.getElementById("copy-url-button").addEventListener("click", function() {
+        var url = window.location.href;
+        navigator.clipboard.writeText(url);
+        var button = document.getElementById("copy-url-button");
+        button.style.backgroundColor = "#96a1f0 ";
+        button.style.animation = "pulse 1s forwards";
+        setTimeout(function() {
+            button.style.backgroundColor = "";
+            button.style.animation = "";
+        }, 2000);
+    });
+</script>
+
+<style>
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+</style>
+
+<script>
+    const options = document.querySelectorAll("label");
+    for (let i = 0; i < options.length; i++) {
+    options[i].addEventListener("click", ()=>{
+        for (let j = 0; j < options.length; j++) {
+        if(options[j].classList.contains("selected")){
+            options[j].classList.remove("selected");
+        }
+        }
+
+        options[i].classList.add("selected");
+        for (let k = 0; k < options.length; k++) {
+        options[k].classList.add("selectall");
+        }
+
+        let forVal = options[i].getAttribute("for");
+        let selectInput = document.querySelector("#"+forVal);
+        let getAtt = selectInput.getAttribute("type");
+        if(getAtt == "checkbox"){
+        selectInput.setAttribute("type", "radio");
+        }else if(selectInput.checked == true){
+        options[i].classList.remove("selected");
+        selectInput.setAttribute("type", "checkbox");
+        }
+
+        let array = [];
+        for (let l = 0; l < options.length; l++) {
+        if(options[l].classList.contains("selected")){
+            array.push(l);
+        }
+        }
+        if(array.length == 0){
+        for (let m = 0; m < options.length; m++) {
+            options[m].removeAttribute("class");
+        }
+        }
+    });
+    }
+
+</script>
+</body>
+</html>
