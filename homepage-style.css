@@ -5,34 +5,30 @@ body{
     transition: all 0.25s ease;
     background-color: var(--secondary-bg);
 }
-  @media (max-width: 1700px) {
+  @media (max-width: 1475px) {
     .homepage-container {
-      float:middle;
-      width: 80%;
-      justify-content: center;
+
 
         
     }
     .homepage-header{
-        padding-left:0px;
-        margin: 0 auto;
-        justify-content: center;
+
     }
 
     #posts .post-item{
-      margin-left: 31.5%;
+      margin-left: 205px;
     }
   }
 
 
-.homepage-container{
+  .homepage-container{
+
     display: flex;
     justify-content: center;
     padding-left:305px;
-    overflow: show;
-    flex-wrap: wrap;
+    overflow-x: auto;
+    flex-wrap: nowrap; /* added flex-wrap and white-space properties */
     margin: 0 auto;
-
 }
 
 .card{
@@ -48,8 +44,9 @@ body{
     margin-top: 55px;
     transition: all 0.2s ease;
     box-shadow: 0 0 3px var(--hover-colour);
-    
 }
+
+
 
 .card-highlight{
     position: absolute;
@@ -150,21 +147,21 @@ body{
 }
 
 .homepage-header{
-    display: flex;
-    justify-content: center;
-    padding-left:305px;
-    margin: 75px 0 15px 0;
-    text-align: right;
+  display: flex;
+  justify-content: center;
+  margin: 75px 0 15px 0;
+    margin-left: 0px;
+  text-align: left;
+  margin-left: 345px;
 
 }
 
 
 .homepage-header h2{
-    color: var(--logo-colour);
-    font-size: 40px;
-    font-family: 'Inter-', sans-serif;
-    transform: translateX(-490px);
-    text-align: right;
+  color: var(--logo-colour);
+  font-size: 40px;
+  font-family: 'Inter-', sans-serif;
+  width: 1200px;
     
 
 
@@ -252,9 +249,10 @@ body{
 .filter-header{
     display: flex;
     justify-content: center;
-    padding-left:305px;
     margin: 75px 0 15px 0;
     text-align: left;
+    margin-left:345px;
+
 }
 
 .filter-header h2{
@@ -319,14 +317,19 @@ body{
 #posts {
   width: 900px;
   margin: 0 auto;
-
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 
 }
 
 .filters {
+  display: flex;
   width: 1200px;
   margin-bottom: 40px;
   text-align: center;
+  justify-content: center;
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none;
